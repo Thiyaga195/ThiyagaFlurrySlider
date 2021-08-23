@@ -11,5 +11,6 @@ export const Ul = styled.ul`
 
   @media (max-width: 425px) {
     justify-content: left;
+    display: none;
   }
 `;

@@ -18,12 +18,33 @@ const LeftArrow = styled(ArrowButton)`
   left: -20px;
   top: 40%;
   margin-top: -20px;
+
+  @media (max-width: 425px) {
+    top: -20px;
+    bottom: auto;
+    left: auto;
+    right: 60px;
+  }
+  @media (max-width: 320px) {
+    top: -30px;
+    right: 40px;
+  }
 `;
 const RightArrow = styled(ArrowButton)`
   position: absolute;
   right: -20px;
   top: 40%;
   margin-top: -20px;
+
+  @media (max-width: 425px) {
+    top: -20px;
+    bottom: auto;
+    right: 30px;
+  }
+  @media (max-width: 320px) {
+    top: -30px;
+    right: 15px;
+  }
 `;
 
 function Carousel({ items, itemPerPage, width, speed, height }) {

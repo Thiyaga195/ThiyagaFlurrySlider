@@ -8,4 +8,8 @@ export const Icon = styled.span`
   display: inline-block;
   transform: rotate(${(props) => props.deg});
   cursor: pointer;
+  @media (max-width: 425px) {
+    width: 15px;
+    height: 15px;
+  }
 `;

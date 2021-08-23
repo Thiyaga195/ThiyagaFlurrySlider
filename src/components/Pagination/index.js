@@ -12,7 +12,7 @@ import { DotIcon } from './dot-icon';
 function Pagination({ active, count, onClick }) {
   const items = [...Array(count).keys()];
   return (
-    <Ul>
+    <Ul className="dots">
       {items.map((item) => (
         <DotIcon
           key={item}
