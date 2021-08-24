@@ -1,8 +1,7 @@
 export const data = [
   {
     id: 1,
-    source:
-      'https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg',
+    source: 'http://localhost:3000/images/slider-img1.jpg',
     title:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
   },

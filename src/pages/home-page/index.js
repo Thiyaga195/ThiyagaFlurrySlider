@@ -16,11 +16,12 @@ export const HomePage = () => {
   return (
     <>
       <Title>They are talking about Flurry</Title>
+
       <Carousel
         items={data}
         width={effectiveWidth}
         itemPerPage={itemPerPage}
-        speed={500000}
+        speed={4000}
         height={320}
       />
     </>

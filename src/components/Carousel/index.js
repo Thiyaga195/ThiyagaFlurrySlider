@@ -34,7 +34,6 @@ const RightArrow = styled(ArrowButton)`
   position: absolute;
   right: -20px;
   top: 50%;
-  margin-top: -20px;
 
   @media (max-width: 425px) {
     top: -20px;

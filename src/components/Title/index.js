@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h2`
-  margin: 20px 0 40px 40px;
+  margin: 20px 0 20px 40px;
   font-size: 22px;
   color: #1e2c49;
 

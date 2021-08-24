@@ -5,5 +5,6 @@ export const CarouselWrapper = styled.div`
   overflow: hidden;
   width: ${(props) => props.width}px;
   margin: 0 auto;
+  padding: 20px 0;
   position: relative;
 `;
