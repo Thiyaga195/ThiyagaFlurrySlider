@@ -31,7 +31,7 @@ export const CarouselItems = styled.div`
     }
   }
   & > div iframe {
-    min-height: 210px;
+    height: 100%;
     @media (max-width: 425px) {
       min-height: auto;
     }
@@ -41,7 +41,6 @@ export const CarouselItems = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  min-height: 210px;
   @media (max-width: 425px) {
     min-height: auto;
   }

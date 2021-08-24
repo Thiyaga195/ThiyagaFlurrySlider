@@ -9,8 +9,10 @@ export const Ul = styled.ul`
   width: 100%;
   justify-content: center;
 
-  @media (max-width: 425px) {
-    justify-content: left;
+  @media (max-width: 991px) {
+    bottom: -15px;
+  }
+  @media (max-width: 767px) {
     display: none;
   }
 `;

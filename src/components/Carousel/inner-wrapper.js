@@ -9,4 +9,6 @@ export const InnerWrapper = styled.div`
   transition-property: left;
   transition-duration: 0.4s;
   transition-delay: 0.2s;
+  display: -webkit-flex;
+  display: flex;
 `;

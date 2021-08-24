@@ -16,7 +16,7 @@ import ArrowButton from '../ArrowButton';
 const LeftArrow = styled(ArrowButton)`
   position: absolute;
   left: -20px;
-  top: 40%;
+  top: 50%;
   margin-top: -20px;
 
   @media (max-width: 425px) {
@@ -33,7 +33,7 @@ const LeftArrow = styled(ArrowButton)`
 const RightArrow = styled(ArrowButton)`
   position: absolute;
   right: -20px;
-  top: 40%;
+  top: 50%;
   margin-top: -20px;
 
   @media (max-width: 425px) {
