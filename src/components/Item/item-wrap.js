@@ -5,6 +5,7 @@ export const CarouselItems = styled.div`
   width: 80%;
   overflow: hidden;
   padding: 15px;
+  height: ${(props) => props.height}px;
   background: #174459;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -31,9 +32,8 @@ export const CarouselItems = styled.div`
     }
   }
   & > div iframe {
-    height: 100%;
     @media (max-width: 425px) {
-      min-height: auto;
+      height: 100%;
     }
   }
 `;
@@ -41,6 +41,8 @@ export const CarouselItems = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  height: ${(props) => props.height - 84}px;
   @media (max-width: 425px) {
     min-height: auto;
   }

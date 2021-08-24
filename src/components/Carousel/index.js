@@ -74,21 +74,20 @@ function Carousel({ items, itemPerPage, width, speed, height }) {
     <CarouselWrapper
       width={width}
       height={height}
-      style={{ overflow: 'unset' }}
+      style={{ overflow: 'unset', marginBottom: width < 425 ? 20 : 70 }}
     >
       <CarouselWrapper width={width} height={height}>
         <InnerWrapper style={{ left: `-${state.left}px` }} width={totalWidth}>
           {items.map((item) => (
-            <Item key={item.id} item={item} width={itemWidth} />
+            <Item key={item.id} item={item} width={itemWidth} height={height} />
           ))}
         </InnerWrapper>
-        <Pagination
-          count={totalPage}
-          active={state.page}
-          onClick={(page) => goToPage(page)}
-        />
       </CarouselWrapper>
-
+      <Pagination
+        count={totalPage}
+        active={state.page}
+        onClick={(page) => goToPage(page)}
+      />
       <LeftArrow
         direction="left"
         disabled={state.page === 0}

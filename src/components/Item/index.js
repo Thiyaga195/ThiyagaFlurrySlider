@@ -11,11 +11,11 @@ import YouTube from 'react-youtube';
 import { ItemWrapper } from './item-wrapper';
 import { CarouselItems, Image } from './item-wrap';
 
-function Item({ item, width }) {
+function Item({ item, width, height }) {
   const { source, isVideo, title } = item;
   const videonReady = (event) => event.target.pauseVideo();
   const opts = {
-    height: '100%',
+    height: height - 84,
     width: '100%',
     playerVars: {
       autoplay: 0,
@@ -29,7 +29,7 @@ function Item({ item, width }) {
           <YouTube videoId={source} opts={opts} onReady={videonReady} />
         ) : (
           <a href={source} target="_blank">
-            <Image src={source} alt="" />
+            <Image src={source} alt="" height={height} />
           </a>
         )}
       </CarouselItems>
@@ -44,6 +44,7 @@ Item.propTypes = {
     title: PropTypes.string.isRequired,
   }).isRequired,
   width: PropTypes.number,
+  height: PropTypes.number,
 };
 
 export default memo(Item);

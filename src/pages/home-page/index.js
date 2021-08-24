@@ -20,7 +20,8 @@ export const HomePage = () => {
         items={data}
         width={effectiveWidth}
         itemPerPage={itemPerPage}
-        speed={3000}
+        speed={500000}
+        height={320}
       />
     </>
   );
